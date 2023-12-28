@@ -14,7 +14,7 @@ const [details, setDetails] = useState({});
     );
   useEffect(() => {
     fetchDetails();
-  }, [params.name]);
+  }, []);
   
    const detailData = await data.json();
     setDetails(detailData);
